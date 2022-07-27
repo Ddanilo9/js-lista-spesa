@@ -1,7 +1,7 @@
-// console.log('holi')
+console.log('hola')
 
-let ul = document.getElementById('lista-spesa-box');
-
+let ul = document.querySelector('.lista-spesa-box');
+let i = 0
 
 let listaSpesa = [
 'pane',
@@ -13,18 +13,18 @@ let listaSpesa = [
 'detersivo'
 ];
 
-// console.log(listaSpesa)
+while (i < listaSpesa.length - 1) {
 
-for (i = 0; i < listaSpesa.length; i++){
+i++
 let lista = listaSpesa[i];
-// console.log(lista)
 
 let li = `
 <li>
 ${lista}
 </li>
 `
+// console.log(li)
 
 ul.innerHTML += li;
-}
 
+}
